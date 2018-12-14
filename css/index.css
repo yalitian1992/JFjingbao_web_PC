@@ -1,0 +1,1425 @@
+@media screen and (min-width: 1600px) {
+    /* 公共 */
+    .logo {
+        position: fixed;
+        z-index: 999;
+        top: -10px;
+        left: -7px;
+        width: 210px;
+        height: 113px;
+        background: url(../img/logo.png) no-repeat center/contain;
+    }
+    
+    /* 视频 */
+    .video {
+        position: relative;
+        width: 330px;
+        height: 168px;
+        margin: 0 auto;
+        margin-top: 30px;
+        background: url(../img/movie-bg.png) no-repeat center/contain;
+        background-color: #000;
+    }
+    .video .play {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        width: 65px;
+        height: 65px;
+        background: url(../img/movie-play.png) no-repeat center/contain;
+        transition: all 1s;
+    }
+    .video:hover {
+        cursor: pointer;
+    }
+    .video:hover .play {
+        transform: scale(1.2);  
+    }
+    .movie {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 999;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.85);
+        display: none;
+    }
+    .movie .movie-kuang {
+        width: 60%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+    }
+    .movie .movie-kuang video {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+    
+    }
+    .movie .movie-close-button {
+        cursor:pointer;
+        position: absolute;
+        top: -25px;
+        right: -45px;
+        width: 45px;
+        height: 45px;
+        background-color: rgba(255,255,255,0.5);
+    }
+    .movie .movie-close-button .cha {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        background-image: url(../img/movie-close.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        width: 16px;
+        height: 16px;
+        transition: all 1s;
+    }
+    .movie .movie-close-button:hover .cha {
+        transform: rotate(180deg);
+        transition: all 1s;
+    }
+    .diamonds .diamonds-rotate {
+        width:400px;
+    }
+    
+    /* 测导航 */
+    #menu { 
+        margin: 0;
+        padding: 0;
+        position: fixed;
+        left: 10px;
+        top: 23%;
+        list-style-type: none;
+        z-index: 70;
+        padding-left: 20px;
+    }
+    #menu li {
+        margin:  0 10px 0 0; 
+        font-size: 14px;
+    }
+    #menu a { 
+        position: relative;
+        display: block;
+        height: 110px;
+        line-height: 110px;
+        font-size: 24px; 
+        float: left; 
+        color: #fff; text-decoration: none;
+        text-shadow: -1px 5px 1px rgba(0,0,0,0.7);
+    }
+    #menu a:before {
+        position: absolute;
+        content: "";
+        width: 1px;
+        height: 69px;
+        background: #fff;
+        top: -35px;
+        left: 39px;
+    }
+    #menu li:first-child a:before {
+        position: absolute;
+        content: "";
+        width: 7px;
+        height: 180px;
+        background: url(../img/nav-top.png) no-repeat center/100% 100%;
+        top: -146px;
+        left: 37px;
+    }
+    #menu li:last-child a:after {
+        position: absolute;
+        content: "";
+        width: 7px;
+        height: 180px;
+        background: url(../img/nav-bottom.png) no-repeat center/contain;
+        top: 73px;
+        left: 36px;
+    }
+    
+    #menu a i{ 
+        display: inline-block;
+        position: relative;
+        top: 2px;
+        right: 3px;
+        margin-left: 2px;
+        width: 33px;
+        height: 20px;
+        background: url(../img/point-nomal.png) no-repeat center/contain;
+    }
+    #menu .active a { color: #ECB655;}
+    #menu .active a i{ background: url(../img/point-active.png) no-repeat center/contain;}
+    .section { text-align: center; font: 50px "Microsoft Yahei"; color: #fff;}
+    /* 首屏 */
+    .home {
+        background: url(../img/bg-home.png) no-repeat center/cover;
+        overflow: hidden;
+    }
+    .home .ballBox {
+        width: 786px;
+        height: 711px;
+        position: absolute;
+        bottom: -80px;
+        left: 387px;
+    }
+    .home .ballBox .ball {
+        position: absolute;
+        top: 43px;
+        left: 119px;
+        width: 433px;
+        height: 471px;
+        background: url(../img/home-ball.png) no-repeat center/contain;
+    }
+    .home .ballBox .bg {
+        width: 786px;
+        height: 711px;
+        background: url(../img/home-ball-quan.png) no-repeat center/contain;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .home .box {
+        position: relative;
+        z-index: 30;
+        width: 854px;
+        padding-right: 80px;
+        float: right;
+    }
+    .home .box .title {
+        width: 100%;
+        height: 131px;
+        background: url(../img/basic-title.png) no-repeat center/contain;
+    }
+    .home .box p {
+        text-align: left;
+        text-indent: 2em;
+        width: 560px;
+        margin: 0 auto;
+        font-size: 20px;
+        line-height: 26px;
+        color: #fbc87e;
+    }
+    .home .box .download {
+        width: 441px;
+        height: 78px;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+    .home .box .download span {
+        cursor: pointer;
+        display: block;
+        height: 78px;
+        width: 208px;
+        font-size: 30px;
+        line-height: 78px;
+        color: #744425;
+        background: #fff;
+    }
+    .home .box .download span:first-child {
+        float: left;
+        background: url(../img/download-ios.png) no-repeat center/contain;
+    }
+    .home .box .download span:last-child {
+        float: right;
+        background: url(../img/download-android.png) no-repeat center/contain;
+    }
+    .home .qr-code {
+        position: absolute;
+        right: 0;
+        top: 40%;
+        width: 131px;
+        height: 154px;
+        background: url(../img/qr-code.png) no-repeat center/contain;
+    }
+    .home .dragon {
+        width: 106%;
+        height: 106%;
+        position: absolute;
+        top: -6%;
+        left: -6%;
+    }
+    .home .dragon li {
+        position: absolute;
+    }
+    .home .dragon li.dragon-body {
+        z-index: 10;
+        top: 0;
+        left: 0;
+        width: 713px;
+        height: 598px;
+        background: url(../img/home/Fragment-5.png) no-repeat center/contain;
+    }
+    .home .dragon li.tooth1 {
+        z-index: 2;
+        top: 348px;
+        left: 218px;
+        width: 324px;
+        height: 274px;
+        background: url(../img/home/Fragment-4.png) no-repeat center/contain;
+    }
+    .home .dragon li.tooth2 {
+        z-index: 1;
+        top: 396px;
+        left: 444px;
+        width: 93px;
+        height: 102px;
+        background: url(../img/home/Fragment-3.png) no-repeat center/contain;
+    }
+    .home .dragon li.jiao1 {
+        z-index: 0;
+        top: 185px;
+        left: 533px;
+        width: 229px;
+        height: 255px;
+        background: url(../img/home/Fragment-1.png) no-repeat center/contain;
+    }
+    .home .dragon li.jiao2 {
+        z-index: 0;
+        top: 348px;
+        left: 557px;
+        width: 105px;
+        height: 157px;
+        background: url(../img/home/Fragment-2.png) no-repeat center/contain;
+    }
+    .home .dragon li.hair1 {
+        z-index: 20;
+        top: 188px;
+        left: 7px;
+        width: 204px;
+        height: 235px;
+        background: url(../img/home/Fragment-6.png) no-repeat center/contain;
+    }
+    .home .dragon li.hair2 {
+        z-index: 20;
+        top: 183px;
+        left: 56px;
+        width: 136px;
+        height: 158px;
+        background: url(../img/home/Fragment-7.png) no-repeat center/contain;
+    }
+    .home .dragon li.hair3 {
+        z-index: 20;
+        top: 383px;
+        left: 95px;
+        width: 127px;
+        height: 99px;
+        background: url(../img/home/Fragment-8.png) no-repeat center/contain;
+    }
+    .home .dragon li.bottomhand1 {
+        z-index: 8;
+        top: 606px;
+        left: 27px;
+        width: 390px;
+        height: 421px;
+        background: url(../img/home/bottomhand/1.png) no-repeat center/contain;
+    }
+    .home .dragon li.bottomhand2 {
+        z-index: 20;
+        top: 932px;
+        left: 80px;
+        width: 80px;
+        height: 139px;
+        background: url(../img/home/bottomhand/2.png) no-repeat center/contain;
+    }
+    .home .dragon li.bottomhand3 {
+        z-index: 20;
+        top: 918px;
+        left: 131px;
+        width: 78px;
+        height: 173px;
+        background: url(../img/home/bottomhand/3.png) no-repeat center/contain;
+    }
+    .home .dragon li.bottomhand4 {
+        z-index: 5;
+        top: 874px;
+        left: 179px;
+        width: 93px;
+        height: 167px;
+        background: url(../img/home/bottomhand/4.png) no-repeat center/contain;
+    }
+    .home .dragon li.bottomhand5 {
+        z-index: 20;
+        top: 731px;
+        left: 246px;
+        width: 165px;
+        height: 128px;
+        background: url(../img/home/bottomhand/5.png) no-repeat center/contain;
+    }
+    .home .dragon li.bottomhand6 {
+        z-index: 5;
+        top: 301px;
+        left: 0px;
+        width: 423px;
+        height: 790px;
+        background: url(../img/home/bottomhand/6.png) no-repeat center/contain;
+    }
+    
+    .home .dragon li.tophand1 {
+        z-index: 5;
+        top: 48px;
+        left: 647px;
+        width: 109px;
+        height: 151px;
+        background: url(../img/home/tophand/1.png) no-repeat center/contain;
+    }
+    .home .dragon li.tophand2 {
+        z-index: 5;
+        top: -20px;
+        left: 596px;
+        width: 200px;
+        height: 97px;
+        background: url(../img/home/tophand/2.png) no-repeat center/contain;
+    }
+    .home .dragon li.tophand3 {
+        z-index: 7;
+        top: -12px;
+        left: 554px;
+        width: 177px;
+        height: 95px;
+        background: url(../img/home/tophand/3.png) no-repeat center/contain;
+    }
+    .home .dragon li.tophand4 {
+        z-index: 6;
+        top: 78px;
+        left: 504px;
+        width: 124px;
+        height: 102px;
+        background: url(../img/home/tophand/4.png) no-repeat center/contain;
+    }
+    .home .dragon li.tophand5 {
+        z-index: 5;
+        top: 0px;
+        left: 452px;
+        width: 259px;
+        height: 171px;
+        background: url(../img/home/tophand/5.png) no-repeat center/contain;
+    }
+    .home .dragon li.man1 {
+        z-index: 5;
+        bottom: -2%;
+        right: 0px;
+        width: 672px;
+        height: 695px;
+        background: url(../img/home/man-1.png) no-repeat center/contain;
+    }
+    .home .dragon li.man2 {
+        z-index: 5;
+        bottom: -4%;
+        left: 53%;
+        width: 496px;
+        height: 409px;
+        background: url(../img/home/man-2.png) no-repeat center/contain;
+    }
+    /* 游戏特色 */
+    .feature {
+    }
+    .feature ul {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+    .feature ul li {
+        position: absolute;
+        width: 90%;
+        height: 100%;
+        top: 0;
+        transition: all .5s;
+    }
+    .feature ul li:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.8);
+        transition: all .5s;
+    }
+    .feature ul li.hover:before {
+        background: rgba(0,0,0,0);
+    }
+    .feature ul li span {
+        position: relative;
+        z-index: 2;
+        display: block;
+        width: 616px;
+        height: 100%;
+        opacity: 1;
+        transition: all .5s;
+    }
+    .feature ul li.hover span {
+        opacity: 0;
+    }
+    .feature ul li:nth-child(1) span {
+        float: right;
+        background: url(../img/bg-feature-1-txt.png) no-repeat center right/contain;
+    }
+    .feature ul li:nth-child(2) span {
+        margin: 0 auto;
+        background: url(../img/bg-feature-2-txt.png) no-repeat center right/contain;
+    }
+    .feature ul li:nth-child(3) span {
+        float: left;
+        background: url(../img/bg-feature-3-txt.png) no-repeat center right/contain;
+    }
+    .feature ul li:nth-child(1) {
+        background: url(../img/bg-feature-1.png) no-repeat center/cover;
+        z-index: 2;
+        right: 66.6%;
+    }
+    .feature ul li:nth-child(2) {
+        background: url(../img/bg-feature-2.png) no-repeat center/cover;
+        left: 5%;
+        z-index: 1;
+    }
+    .feature ul li:nth-child(3) {
+        background: url(../img/bg-feature-3.png) no-repeat center/cover;
+        left: 66.6%;
+        z-index: 2;
+    }
+    .feature ul li:nth-child(1).hover {
+        right: 10%;
+    }
+    .feature ul li:nth-child(2).hover {
+        left: 5%;
+    }
+    .feature ul li:nth-child(3).hover {
+        left: 10%;
+    }
+    .feature ul li:nth-child(1).active {
+        right: 95%;
+    }
+    .feature ul li:nth-child(2).active {
+        left: 5%;
+    }
+    .feature ul li:nth-child(3).active {
+        left: 95%;
+    }
+    /* 基础要点 */
+    .basic {
+        background: url(../img/bg-basic.png) no-repeat center/cover;
+        overflow: hidden;
+        position: relative;
+        z-index: 20;
+    }
+    .basic .box {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        position: relative;
+        z-index: 5;
+    }
+    .basic .box ul {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        width: 800px;
+        height: 800px;
+    }
+    .basic .box ul li {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        border-radius: 50%;
+    }
+    .basic .points .content {
+        width: 287px;
+        height: 229px;
+        background: red;
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+    }
+    .basic .box ul li:nth-child(1) {
+        z-index: 0;
+        width: 752px;
+        height: 752px;
+        background: url(../img/basic-longzhu.png) no-repeat center/contain;
+    }
+    .basic .box ul li:nth-child(2) {
+        z-index: 1;
+        width: 785px;
+        height: 785px;
+        border: 2px solid #B1985A;
+    }
+    .basic .box ul li span {
+        font-size: 40px;
+        display: block;
+        position: absolute;
+        width: 250px;
+        height: 66px;
+        line-height: 66px;
+    }
+    .basic .box ul li:nth-child(2) span:nth-child(1) {
+        top: 50px;
+        right: -26px;
+    }
+    .basic .box ul li:nth-child(2) span:nth-child(2) {
+        top: 355px;
+        right: -172px;
+    }
+    .basic .box ul li:nth-child(2) span:nth-child(3) {
+        bottom: 44px;
+        right: -52px;
+    }
+    .basic .box ul li:nth-child(2) span:nth-child(4) {
+        bottom: 44px;
+        left: -30px;
+    }
+    .basic .box ul li:nth-child(2) span:nth-child(5) {
+        top: 355px;
+        left: -173px;
+    }
+    .basic .box ul li:nth-child(2) span:nth-child(6) {
+        top: 42px;
+        left: -13px;
+    }
+    .basic .box ul li span i.img {
+        display: inline-block;
+        position: relative;
+        width: 66px;
+        height: 66px;
+    }
+    .basic .box ul li span i.text {
+        height: 66px;
+        display: inline-block;
+        position: relative;
+        top: -16px;
+    }
+    .basic .box ul li:nth-child(2) span:nth-child(1) i.img {
+        background: url(../img/icon-jimou.png) no-repeat center/contain;
+    }
+    .basic .box ul li:nth-child(2) span:nth-child(2) i.img {
+        background: url(../img/icon-miyao.png) no-repeat center/contain;
+    }
+    .basic .box ul li:nth-child(2) span:nth-child(3) i.img {
+        background: url(../img/icon-tongguan.png) no-repeat center/contain;
+    }
+    .basic .box ul li:nth-child(2) span:nth-child(4) i.img {
+        background: url(../img/icon-weijifen.png) no-repeat center/contain;
+    }
+    .basic .box ul li:nth-child(2) span:nth-child(5) i.img {
+        background: url(../img/icon-nengliang.png) no-repeat center/contain;
+    }
+    .basic .box ul li:nth-child(2) span:nth-child(6) i.img {
+        background: url(../img/icon-gongxun.png) no-repeat center/contain;
+    }
+    
+    .basic .dotted {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        z-index: 1;
+        width: 1300px;
+        height: 1300px;
+        border: 1px dotted #B1985A;
+        border-radius: 50%;
+    }
+    .basic .pointsDetails {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 6;
+        margin: auto;
+        width: 529px;
+        height: 320px;
+        background: url(../img/basic-detail-bg.png) no-repeat center/contain;
+    }
+    .basic .pointsDetails:before {
+        display: block;
+        content: "";
+        position: absolute;
+        right: -26px;
+        top: -47px;
+        width: 33px;
+        height: 418px;
+        background: url(../img/basic-detail-bg-gun.png) no-repeat center/contain;
+    }
+    .basic .pointsDetails:after {
+        display: block;
+        content: "";
+        position: absolute;
+        left: -27px;
+        top: -46px;
+        width: 33px;
+        height: 418px;
+        background: url(../img/basic-detail-bg-gun.png) no-repeat center/contain;
+    }
+    .basic .pointsDetails li {
+        color: #210c05;
+        text-align: left;
+        display: none;
+        padding: 38px 41px;
+    }
+    .basic .pointsDetails li p {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .basic .pointsDetails li .img {
+        width: 97px;
+        height: 101px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+    .basic .pointsDetails li:nth-child(1) .img {
+        background: url(../img/icon-jimou-open.png) no-repeat center/contain;
+    }
+    .basic .pointsDetails li:nth-child(2) .img {
+        background: url(../img/icon-miyao-open.png) no-repeat center/contain;
+    }
+    .basic .pointsDetails li:nth-child(3) .img {
+        background: url(../img/icon-tongguan-open.png) no-repeat center/contain;
+    }
+    .basic .pointsDetails li:nth-child(4) .img {
+        background: url(../img/icon-weijifen-open.png) no-repeat center/contain;
+    }
+    .basic .pointsDetails li:nth-child(5) .img {
+        background: url(../img/icon-nengliang-open.png) no-repeat center/contain;
+    }
+    .basic .pointsDetails li:nth-child(6) .img {
+        background: url(../img/icon-gongxun-open.png) no-repeat center/contain;
+    }
+    /* 计谋介绍 */
+    .trick {
+        background: url(../img/bg-trick.png) no-repeat center/cover;
+    }
+    .trick .box {
+        position: relative;
+        width: 80%;
+        min-width: 1200px;
+        height: 550px;
+        margin: 0 auto;
+        /* background-color: red;
+        background:url(../img/trick-left.png) no-repeat left/contain,
+        url(../img/trick-right.png) no-repeat right/contain; */
+    }
+    .trick .box .cardhover .pai {
+        transition: all 1s;
+    }
+    .trick .box .cardhover:hover .pai {
+        transform: translateY(-10px);
+    }
+    .trick .box .attack, .trick .box .defanse, .trick .box .control {
+        width: 465px;
+        height: 456px;
+        position: absolute;
+        cursor: pointer;
+    }
+    .trick .box .attack {
+        top: -156px;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+    }
+    .trick .box .defanse {
+        bottom: -18%;
+        right: 8%;
+    }
+    .trick .box .control {
+        bottom: -18%;
+        left: 8%;
+    }
+    .trick .box .deng-front {
+        position: absolute;
+        width: 465px;
+        height: 465px;
+        bottom: 0;
+        left: 0;
+    }
+    .trick .box .attack .deng-front {
+        background: url(../img/trick-attack-light-front.png) no-repeat center/contain;
+    }
+    .trick .box .defanse .deng-front {
+        background: url(../img/trick-defanse-light-front.png) no-repeat center/contain;
+    }
+    .trick .box .control .deng-front {
+        background: url(../img/trick-control-light-front.png) no-repeat center/contain;
+    }
+    .trick .box .deng {
+        width: 465px;
+        height: 465px;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    
+    .trick .box .attack .deng {
+        background: url(../img/trick-attack-light.png) no-repeat center/contain;
+    }
+    .trick .box .defanse .deng {
+        background: url(../img/trick-defanse-light.png) no-repeat center/contain;
+    }
+    .trick .box .control .deng {
+        background: url(../img/trick-control-light.png) no-repeat center/contain;
+    }
+    .trick .box .pai {
+        position: absolute;
+        bottom: 184px;
+        left: 120px;
+        width: 234px;
+        height: 321px;
+        background: red;
+    }
+    .trick .box .attack .pai {
+        /* animation: animation-pai 3s ease 1s infinite ; */
+        background: url(../img/trick-attack-kahe-big.png) no-repeat center/contain;
+    }
+    .trick .box .defanse .pai {
+        /* animation: animation-pai 3s ease 2s infinite ; */
+        background: url(../img/trick-defanse-kahe-big.png) no-repeat center/contain;
+    }
+    .trick .box .control .pai {
+        /* animation: animation-pai 3s ease 3s infinite ; */
+        background: url(../img/trick-control-kahe-big.png) no-repeat center/contain;
+    }
+    /* @keyframes animation-pai
+    {
+        0%   {bottom: 184px;}
+        25%  {bottom: 200px;}
+        50%  {bottom: 184px;}
+        75%  {bottom: 184px;}
+        100% {bottom: 184px;}
+    } */
+    .trick .sliderPop {
+        position: absolute;
+        right: -600px;
+        top: 0;
+        height: 100%;
+        width: 600px;
+        background: rgba(68, 49, 34, 0.9);
+        transition: all 1s;
+        padding-top: 2%;
+    }
+    .trick .sliderPop.active {
+        right: 0;
+    }
+    .trick .sliderPop .content .top {
+        overflow: hidden;
+        padding: 50px;
+    }
+    .trick .sliderPop .content .top li {
+        float: left;
+    }
+    .trick .sliderPop .content .top li.img {
+        width: 188px;
+        height: 260px;
+    }
+    .trick .sliderPop .content.attack-list .top li.img {
+        background: url(../img/trick-attack-kahe-small.png) no-repeat center/contain;
+    }
+    .trick .sliderPop .content.defanse-list .top li.img {
+        background: url(../img/trick-defanse-kahe-small.png) no-repeat center/contain;
+    }
+    .trick .sliderPop .content.control-list .top li.img {
+        background: url(../img/trick-control-kahe-small.png) no-repeat center/contain;
+    }
+    .trick .sliderPop .content .top li.txt {
+        position: relative;
+        padding-left: 20px;
+        width: 300px;
+        height: 218px;
+        text-align: left;
+    }
+    .trick .sliderPop .content .top li.txt h3 {
+        color: #eba363;
+        font-size: 47px;
+        padding-bottom: 28px;
+    }
+    .trick .sliderPop .content .top li.txt p {
+        color: #fff;
+        font-size: 28px;
+        line-height: 35px;
+    }
+    .trick .sliderPop .content .top li.txt .detail {
+        cursor: pointer;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        color: #ffcb73;
+        font-size: 24px;
+        text-align: right;
+    }
+    .trick .sliderPop .content .center {
+        height: 59px;
+        background: url(../img/trick-kapai-list.png) no-repeat center/contain;
+    }
+    .trick .sliderPop .content ul.cartlist {
+        width: 482px;
+        margin: 50px 46px 46px 83px;
+    }
+    .trick .sliderPop .content ul.cartlist li {
+        cursor: pointer;
+        width: 100px;
+        height: 168px;
+        margin-bottom: 22px;
+        float: left;
+        transition: all 1s;
+    }
+    .trick .sliderPop .content ul.cartlist li:hover {
+        transform: translateY(-5px)
+    }
+    .trick .sliderPop .content ul.cartlist li:nth-child(3n-1) {
+        margin: 0 80px;
+    }
+    .trick .sliderPop .sliderPop-switch {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        left: -60px;
+        width: 120px;
+        height: 120px;
+        background: url(../img/trick-sliderPop-switch.png) no-repeat center/contain;
+    }
+    
+    .trick .sliderPop .content.attack-list ul.cartlist li:nth-child(1) {
+        background: url(../img/card-attack-wanduo-small.png) no-repeat center/contain;
+    }
+    .trick .sliderPop .content.attack-list ul.cartlist li:nth-child(2) {
+        background: url(../img/card-attack-duoyao-small.png) no-repeat center/contain;
+    }
+    .trick .sliderPop .content.attack-list ul.cartlist li:nth-child(3) {
+        background: url(../img/card-attack-juedou-small.png) no-repeat center/contain;
+    }
+    .trick .sliderPop .content.attack-list ul.cartlist li:nth-child(4) {
+        background: url(../img/card-attack-pofang-small.png) no-repeat center/contain;
+    }
+    
+    .trick .sliderPop .content.defanse-list ul.cartlist li:nth-child(1) {
+        background: url(../img/card-control-zhuanshang-small.png) no-repeat center/contain;
+    }
+    .trick .sliderPop .content.defanse-list ul.cartlist li:nth-child(2) {
+        background: url(../img/card-defanse-huanshi-small.png) no-repeat center/contain;
+    }
+    .trick .sliderPop .content.defanse-list ul.cartlist li:nth-child(3) {
+        background: url(../img/card-defanse-xiaohao-small.png) no-repeat center/contain;
+    }
+    
+    .trick .sliderPop .content.control-list ul.cartlist li:nth-child(1) {
+        background: url(../img/card-control-chihuan-small.png) no-repeat center/contain;
+    }
+    .trick .sliderPop .content.control-list ul.cartlist li:nth-child(2) {
+        background: url(../img/card-control-jingu-small.png) no-repeat center/contain;
+    }
+    .trick .sliderPop .content.control-list ul.cartlist li:nth-child(3) {
+        background: url(../img/card-control-shikong-small.png) no-repeat center/contain;
+    }
+    .trick .sliderPop .content.control-list ul.cartlist li:nth-child(4) {
+        background: url(../img/card-control-toutian-small.png) no-repeat center/contain;
+    }
+    .trick .sliderPop .content.control-list ul.cartlist li:nth-child(5) {
+        background: url(../img/card-control-zengxiao-small.png) no-repeat center/contain;
+    }
+    
+    .trick .carddetails {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url(../img/bg-trick-pop.png) no-repeat center/cover;
+    }
+    .trick .carddetails .btn-closeCarddetails {
+        cursor: pointer;
+        position: absolute;
+        z-index: 999;
+        width: 58px;
+        height: 58px;
+        top: 11px;
+        right: 11px;
+        background: url(../img/btn-closeCarddetails.png) no-repeat center/cover;
+    }
+    .trick .carddetails .popbox {
+        position: relative;
+        width: 100%;
+        min-width: 1200px;
+        height: 100%;
+        /* margin: 0 auto; */
+        /* background: url(../img/trick-left.png) no-repeat 0 0/contain,
+     url(../img/trick-right.png) no-repeat 56% 0/contain; */
+    }
+    .trick .carddetails .popbox .big-card {
+        position: relative;
+        float: left;
+        width: 1581px;
+        height: 1145px;
+        margin-left: -14%;
+        margin-top: -10%;
+    }
+    .trick .carddetails ul.attack-detail .big-card {
+        background: url(../img/trick-detail-light-attack.png) no-repeat center/contain;
+    }
+    .trick .carddetails ul.defanse-detail .big-card {
+        background: url(../img/trick-detail-light-defanse.png) no-repeat center/contain;
+    }
+    .trick .carddetails ul.control-detail .big-card {
+        background: url(../img/trick-detail-light-control.png) no-repeat center/contain;
+    }
+    
+    .trick .carddetails .popbox .big-card .front-light {
+        position: absolute;
+        top: 348px;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        width: 638px;
+        height: 800px;
+    }
+    .trick .carddetails ul.attack-detail .front-light {
+        background: url(../img/trick-detail-light-attack-front.png) no-repeat center/contain;
+    }
+    .trick .carddetails ul.defanse-detail .front-light {
+        background: url(../img/trick-detail-light-defanse-front.png) no-repeat center/contain;
+    }
+    .trick .carddetails ul.control-detail .front-light {
+        background: url(../img/trick-detail-light-control-front.png) no-repeat center/contain;
+    }
+    .trick .carddetails .popbox .big-card .mid-card {
+        position: absolute;
+        top: 0;
+        left: 62px;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        width: 334px;
+        height: 503px;
+    }
+    .trick .carddetails ul.attack-detail li:nth-child(1) .big-card .mid-card {
+        background: url(../img/card-attack-duoyao-big.png) no-repeat center/contain;
+    }
+    .trick .carddetails ul.attack-detail li:nth-child(2) .big-card .mid-card {
+        background: url(../img/card-attack-wanduo-big.png) no-repeat center/contain;
+    }
+    .trick .carddetails ul.attack-detail li:nth-child(3) .big-card .mid-card {
+        background: url(../img/card-attack-juedou-big.png) no-repeat center/contain;
+    }
+    .trick .carddetails ul.attack-detail li:nth-child(4) .big-card .mid-card {
+        background: url(../img/card-attack-pofang-big.png) no-repeat center/contain;
+    }
+    
+    .trick .carddetails ul.defanse-detail li:nth-child(1) .big-card .mid-card {
+        background: url(../img/card-control-zhuanshang-big.png) no-repeat center/contain;
+    }
+    .trick .carddetails ul.defanse-detail li:nth-child(2) .big-card .mid-card {
+        background: url(../img/card-defanse-huanshi-big.png) no-repeat center/contain;
+    }
+    .trick .carddetails ul.defanse-detail li:nth-child(3) .big-card .mid-card {
+        background: url(../img/card-defanse-xiaohao-big.png) no-repeat center/contain;
+    }
+    
+    .trick .carddetails ul.control-detail li:nth-child(1) .big-card .mid-card {
+        background: url(../img/card-control-chihuan-big.png) no-repeat center/contain;
+    }
+    .trick .carddetails ul.control-detail li:nth-child(2) .big-card .mid-card {
+        background: url(../img/card-control-jingu-big.png) no-repeat center/contain;
+    }
+    .trick .carddetails ul.control-detail li:nth-child(3) .big-card .mid-card {
+        background: url(../img/card-control-shikong-big.png) no-repeat center/contain;
+    }
+    .trick .carddetails ul.control-detail li:nth-child(4) .big-card .mid-card {
+        background: url(../img/card-control-toutian-big.png) no-repeat center/contain;
+    }
+    .trick .carddetails ul.control-detail li:nth-child(5) .big-card .mid-card {
+        background: url(../img/card-control-zengxiao-big.png) no-repeat center/contain;
+    }
+    .trick .carddetails .popbox .detail {
+        cursor: pointer;
+        text-align: left;
+        width: 673px;
+        /* height: 633px; */
+        /* overflow: hidden; */
+        /* margin-right: 44px; */
+        margin-top: 8%;
+        float: right;
+        position: absolute;
+        right: 0;
+    }
+    .trick .carddetails .popbox .detail h5 {
+        font-size: 30px;
+        color: #eba363;
+        /* padding: 20px 0; */
+        padding-top: 55px;
+    
+    }
+    .trick .carddetails .popbox .detail .name {
+        color: #eba363;
+        font-size: 50px;
+    }
+    .trick .carddetails .popbox .detail p {
+        font-size: 24px;
+        line-height: 30px;
+        color: #fff;
+        padding-top: 20px;
+    }
+    .trick .carddetails .popbox .detail p span.key {
+        color: #eba363;
+    }
+    .trick .carddetails .popbox  .detail .title {
+        font-size: 42px;
+        color: #eba363;
+    }
+    .trick .video-box {
+        width: 330px;
+        overflow: hidden;
+    }
+    
+    
+    /* 攻略 */
+    .raiders {
+        background: url(../img/bg-raiders.png)
+    }
+    .raiders .box {
+        position: relative;
+        width: 1200px;
+        height: 783px;
+        margin: 0 auto;
+        margin-left: 22%;
+    }
+    .raiders .box .phone {
+        z-index: 2;
+        position: absolute;
+        left: 74px;
+        top: 122px;
+        width: 321px;
+        height: 644px;
+    }
+    .raiders .slide:nth-child(1) .phone {
+        background: url(../img/raiders-cansai.png) no-repeat center/contain;
+    }
+    .raiders .slide:nth-child(2) .phone {
+        background: url(../img/raiders-jingsai-1.png) no-repeat center/contain;
+    }
+    .raiders .slide:nth-child(3) .phone {
+        background: url(../img/raiders-jingsai-2.png) no-repeat center/contain;
+    }
+    .raiders .slide:nth-child(4) .phone {
+        background: url(../img/raiders-shengli.png) no-repeat center/contain;
+    }
+    .raiders .box .content {
+        z-index: 1;
+        position: absolute;
+        right: -500px;
+        top: 0;
+        width: 1900px;
+        height: 767px;
+        /* float: right; */
+        margin: 0 auto;
+        background: #DFD3C6;
+        text-align: left;
+        background: url(../img/raiders-bg-text.png) no-repeat center/contain;
+    }
+    .raiders .box .content .text {
+        margin: 116px 0px;
+        margin-left: 616px;
+        padding-right: 20px;
+        /* margin-right: 427px; */
+        width: 700px;
+        height: 552px;
+    }
+    .raiders .box .text h3 {
+        font-size: 40px;
+        color: #622602;
+        padding-bottom: 29px;
+        border-bottom: 1px solid #622602;
+    }
+    .raiders .box .text h5 {
+        position: relative;
+        font-size: 30px;
+        color: #622602;
+        padding: 12px 0;
+        padding-left: 20px;
+    }
+    .raiders .box .text h5:before {
+        content: "";
+        position: absolute;
+        left: 6px;
+        top: 20px;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: #622602;
+    }
+    .raiders .box .text h6 {
+        font-size: 24px;
+        color: #622602;
+        padding-bottom: 10px;
+    }
+    .raiders .box .text p {
+        font-size: 18px;
+        line-height: 25px;
+        padding-bottom: 10px;
+        color: #000;
+    }
+    
+    /* 竞赛攻略左右箭头 */
+    .fp-controlArrow.fp-prev {
+        border: none;
+        width: 70px;
+        height: 70px;
+        background: url(../img/Arrow-left.png) no-repeat center/contain;
+        transition: all 1s;
+        left: 15%;
+    }
+    .fp-controlArrow.fp-next {    
+        border: none;
+        width: 70px;
+        height: 70px;
+        background: url(../img/Arrow-right.png) no-repeat center/contain;
+        transition: all 1s;
+        right: 7%;
+    }
+
+    /* 竞赛攻略小点点 */
+    .fp-slidesNav.bottom ul li a {
+        width: 20px;
+        height: 20px;
+        background: url(../img/point-nomal.png) no-repeat center/contain;
+    }
+    .fp-slidesNav.bottom ul li a.active {
+        width: 20px;
+        height: 20px;
+        background: url(../img/point-active.png) no-repeat center/contain;
+    }
+    .fp-slidesNav.bottom ul li a span {
+        display: none;
+    }
+
+    .icp {
+        position: absolute;
+        left: 0;
+        bottom: 20px;
+        width: 100%;
+        height: 25px;
+        line-height: 25px;
+        color: #fff;
+        font-size: 14px;
+        text-align: center;
+        opacity: .8;
+    }
+    }
+
+    
+    
+    
+    .flexslider {
+        margin: 0px auto 20px;
+        margin-left: 106px;
+        position: relative;
+        width: 100%;
+        min-width: 1100px;
+        min-height: 557px;
+        overflow: hidden;
+        zoom: 1;
+    }
+    .trick .flexslider {
+        height: 100%;
+    }
+    .flexslider .slides li {
+        width: 100%;
+        height: 100%;
+        position: relative
+    }
+    
+    .flexslider .slides li:nth-child(1) .pic {
+        /* background: red; */
+    }
+    
+    .flexslider .slides li:nth-child(2) .pic {
+        /* background: blue; */
+    }
+    
+    .flexslider .slides li:nth-child(3) .pic {
+        /* background: yellow; */
+    }
+    
+    .flexslider .slides li .text h1 {
+        color: #fff;
+        line-height: 90px;
+        padding-bottom: 50px;
+        text-shadow: 2px 2px 2px #000
+    }
+    
+    .flexslider .slides li:nth-child(1) .text h1 {
+        width: 672px;
+        margin: 0 auto;
+        margin-top: 235px;
+        text-align: center
+    }
+    
+    .flexslider .slides li:nth-child(2) .text h1 {
+        width: 672px;
+        margin: 0 auto;
+        margin-top: 235px;
+        text-align: center;
+        padding-left: 670px
+    }
+    
+    .flex-direction-nav a {
+        width: 70px;
+        height: 70px;
+        line-height: 99em;
+        overflow: hidden;
+        margin: -35px 0 0;
+        display: block;
+        /* background: url(http://i0.zuanliantech.com/assets/h5/img//banner-ctr-img/ad_ctr-75719c79e09b810732431eed6a501bd7af196dcb7eb441db92a227c4ef0dacc2.png) no-repeat; */
+        position: absolute;
+        top: 50%;
+        z-index: 10;
+        cursor: pointer;
+        opacity: 0;
+        filter: alpha(opacity=0);
+        -webkit-transition: all .3s ease;
+        border-radius: 35px
+    }
+    
+    .flex-direction-nav a.flex-prev {
+        background: url(../img/Arrow-left.png) no-repeat center/contain;
+    }
+    
+    .flex-direction-nav a.flex-next {
+        background: url(../img/Arrow-right.png) no-repeat center/contain;
+    }
+    
+    .flex-direction-nav .flex-next {
+        background-position: 0 -70px;
+        right: 0;
+        margin-right: 200px;
+    }
+    
+    .carddetails .flex-direction-nav .flex-prev {
+        top: 416px;
+        left: 231px;
+    }
+    
+    .carddetails .flex-direction-nav .flex-next {
+        top: 416px;
+        right: 862px;
+    }
+    
+    .flex-direction-nav .flex-prev {
+        left: 0
+    }
+    .raiders .flex-direction-nav .flex-prev {
+        left: 124px;
+    }
+    .raiders .flex-direction-nav .flex-next {
+        right: -36px;
+    }
+    
+    .flexslider:hover .flex-next {
+        opacity: 0.8;
+        filter: alpha(opacity=25)
+    }
+    
+    .flexslider:hover .flex-prev {
+        opacity: 0.8;
+        filter: alpha(opacity=25)
+    }
+    
+    .flexslider:hover .flex-next:hover,.flexslider:hover .flex-prev:hover {
+        opacity: 1;
+        filter: alpha(opacity=50)
+    }
+    
+    .flex-control-nav {
+        width: 100%;
+        position: absolute;
+        bottom: 10px;
+        text-align: center
+    }
+    
+    .flex-control-nav li {
+        margin: 0 2px;
+        display: inline-block;
+        zoom: 1;
+        *display: inline
+    }
+    
+    .flex-control-paging li a {
+        display: block;
+        height: 16px;
+        overflow: hidden;
+        text-indent: -99em;
+        width: 16px;
+        cursor: pointer;
+        background: url(../img/point-nomal.png) no-repeat center/contain;
+    }
+    
+    .flex-control-paging li a.flex-active,.flex-control-paging li.active a {
+        background-position: 0 0;
+        background: url(../img/point-active.png) no-repeat center/contain;
+    }
+    
+    .flexslider .slides a .pic {
+        width: 100%;
+        height: 650px;
+        display: block
+    }
+
+
+
+
+    .scroll-1 {
+        overflow:auto;
+    }
+    .scroll-1 div {
+        width:400px;
+        height:400px;
+    }
+        .scroll-1::-webkit-scrollbar {
+        width:5px;
+        height:5px;
+    }
+    .scroll-1::-webkit-scrollbar-button    {
+        background-color:#DDD3CA;
+    }
+    .scroll-1::-webkit-scrollbar-track     {
+        background:#867B75;
+        border-radius:4px;
+    }
+    .scroll-1::-webkit-scrollbar-track-piece {
+        background:url(http://www.lyblog.net/wp/wp-content/themes/mine/img/stripes_tiny_08.png);
+    }
+    .scroll-1::-webkit-scrollbar-thumb{
+        background:#C98B68;
+        border-radius:4px;
+    }
+    .scroll-1::-webkit-scrollbar-corner {
+        background:#82AFFF;
+    }
+    .scroll-1::-webkit-scrollbar-resizer  {
+        background:#8C817B;
+    }
